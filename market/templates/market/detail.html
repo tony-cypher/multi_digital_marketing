@@ -1,0 +1,25 @@
+{% extends 'market/base.html' %}
+
+
+{% block content %}
+<!-- ================= Product Detail Section =============== -->
+<section id="product">
+    <div class="container my-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <div class="product-img" style="width: 18rem;">
+                    <img src="{{ product.file }}" class="image-fluid">
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{ product.name }} - {{ product.description }}</p>
+                    <p><b>${{ product.price }}</b></p>
+                    <a href="#" class="btn btn-danger">Details</a>
+                    <a href="#" class="btn btn-warning mx-3">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
