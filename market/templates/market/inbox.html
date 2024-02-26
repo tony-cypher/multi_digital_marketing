@@ -1,0 +1,25 @@
+{% extends 'market/base.html' %}
+
+
+{% block content %}
+<!-- ================= Product Detail Section =============== -->
+<section id="product">
+    <div class="container my-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <div class="product-img" style="width: 18rem;">
+                    <img src="https://cdn.vectorstock.com/i/preview-1x/63/10/photo-coming-soon-picture-frame-vector-32416310.webp"
+                        class="image-fluid">
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{ product.name }} - {{ product.description }}</p>
+                    <p><b>${{ product.price }}</b></p>
+                    <a href="#" class="btn btn-success">Buy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
